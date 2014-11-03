@@ -7,6 +7,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/davidhemphill/bumble"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/davidhemphill/symfony"
         }
     ],
 	"require": {
