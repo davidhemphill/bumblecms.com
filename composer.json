@@ -19,7 +19,6 @@
 	},
 	"autoload": {
 		"classmap": [
-			"app/commands",
 			"app/controllers",
 			"app/database/migrations",
 			"app/database/seeds",
