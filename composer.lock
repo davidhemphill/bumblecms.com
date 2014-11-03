@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f2585785bfd67550c619889186dc3333",
+    "hash": "cd9e45c5bb22eb3b2962649e447d8049",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -3069,17 +3069,17 @@
         },
         {
             "name": "symfony/routing",
-            "version": "2.5.x-dev",
+            "version": "v2.5.6",
             "target-dir": "Symfony/Component/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "323e326e2f8f0be68079a34b7a116bc1c6997415"
+                "reference": "c7e381f571aac1de9e06f2bac2097984c543096a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/323e326e2f8f0be68079a34b7a116bc1c6997415",
-                "reference": "323e326e2f8f0be68079a34b7a116bc1c6997415",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/c7e381f571aac1de9e06f2bac2097984c543096a",
+                "reference": "c7e381f571aac1de9e06f2bac2097984c543096a",
                 "shasum": ""
             },
             "require": {
@@ -3132,7 +3132,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2014-11-03 03:54:42"
+            "time": "2014-10-24 05:49:22"
         },
         {
             "name": "symfony/security-core",
