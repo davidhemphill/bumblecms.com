@@ -10,6 +10,7 @@ $(document).on('ready', function () {
         var $form = $(this);
         var location = $(this).attr('action');
         var input = $form.serialize();
+        var $email_input = $('._email-input');
 
         $message = $('#message');
         $messageText = $('#message-text');
@@ -28,6 +29,8 @@ $(document).on('ready', function () {
                 {
                     $message.removeClass('is-hidden').addClass('success');
                     $messageText.text(data.message);
+                    $email_input.val('');
+                    $form.hide();
                 }
                 else
                 {

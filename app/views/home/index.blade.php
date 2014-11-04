@@ -55,7 +55,7 @@
                 'class' => 'form',
             ]) }}
             <form class="signup">
-                <input type="text" name="email" class="input" placeholder="Enter your email"/>
+                <input type="text" name="email" class="input _email-input" placeholder="Enter your email"/>
                 <button class="btn">Sign Up</button>
             </form>
 

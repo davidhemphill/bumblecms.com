@@ -709,6 +709,7 @@ $ft-10: 7.2rem;
 }
 
 .message-box {
+  display: none;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -795,12 +796,81 @@ $ft-10: 7.2rem;
   flex: 0 0 20%;
 }
 
+.doc-pages {
+}
+
+.doc-links {
+  margin: 0;
+  padding: 5rem 0;
+}
+
+.doc-links__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.doc-links__link {
+  display: block;
+  height: 6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3rem;
+  color: #888;
+
+  &:hover {
+    background-color: #DDD;
+  }
+}
+
 // Main Content
 // ------------------------------------------------------------------------------------ */
 .main-content {
   background-color: #FFF;
   flex: 0 0 80%;
   padding: $sv $sh;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #666;
+  }
+
+  h1, h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #666;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #666;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 1.6rem;
+    list-style: none;
+    line-height: 2;
+    color: $branding_color;
+
+    a {
+      color: $branding_color;
+    }
+  }
 }
 
 // Source Code
