@@ -25,9 +25,9 @@
                     {{--<li class="main-nav__item">--}}
                         {{--<a class="main-nav__link" href="">Blog</a>--}}
                     {{--</li>--}}
-                    <li class="main-nav__item">
+                    {{--<li class="main-nav__item">
                         <a class="main-nav__link" href="">Donate</a>
-                    </li>
+                    </li>--}}
                     {{--<li class="main-nav__item">--}}
                         {{--<a class="main-nav__link" href="">Contact</a>--}}
                     {{--</li>--}}
