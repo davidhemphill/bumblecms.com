@@ -45,7 +45,7 @@
 
         <section class="signup-form pb">
             <div class="pv">
-                <h2 class="tac h5 white">Get notified on the Launch Date</h2>
+                <h2 class="tac h5 white">Get on the Bumble Beta list</h2>
             </div>
 
             {{ Form::open([
