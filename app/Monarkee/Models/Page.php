@@ -1,12 +1,14 @@
 <?php namespace Monarkee\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
+use Monarkee\Bumble\Fields\BooleanField;
 use Monarkee\Bumble\Fields\DateTimeField;
 use Monarkee\Bumble\Fields\SlugField;
 use Monarkee\Bumble\Fields\TextareaField;
 use Monarkee\Bumble\Fields\TextField;
 use Monarkee\Bumble\Fieldset\Fieldset;
 use Monarkee\Bumble\Models\BumbleModel;
+use Monarkee\BumbleMarkdownField\MarkdownField;
 
 class Page extends BumbleModel
 {
@@ -20,6 +22,7 @@ class Page extends BumbleModel
         'title' => 'required',
 //        'slug' => 'required',
         'content' => 'required',
+        'active' =>  'required',
     ];
 
     public function setFields()
@@ -30,13 +33,11 @@ class Page extends BumbleModel
                 new SlugField('slug', [
                     'set_from' => 'title'
                 ]),
+                new BooleanField('active', ['description' => 'Hello World']),
                 new TextareaField('content', [
-                    'widget' => 'MarkdownField',
+                    'widget' => 'WYSIWYGField',
                     'description' => 'Your entry content goes here'
                 ]),
-            ],
-            'scheduling' => [
-
             ],
         ]);
     }

@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 use Monarkee\Bumble\Fields\BelongsToManyField;
+use Monarkee\Bumble\Fields\DateField;
 use Monarkee\Bumble\Fields\DateTimeField;
 use Monarkee\Bumble\Fields\Field;
 use Monarkee\Bumble\Fields\FileField;
@@ -12,6 +13,7 @@ use Monarkee\Bumble\Fields\S3FileField;
 use Monarkee\Bumble\Fields\SlugField;
 use Monarkee\Bumble\Fields\TextareaField;
 use Monarkee\Bumble\Fields\TextField;
+use Monarkee\Bumble\Fields\TimeField;
 use Monarkee\Bumble\Fieldset\Fieldset;
 use Monarkee\Bumble\Models\BumbleModel;
 
@@ -33,6 +35,7 @@ class Entry extends BumbleModel
         'title' => 'required',
         'content' => 'required',
 //        'entry_type_id' => 'required|exists:entry_types,id',
+        'status' => 'required',
         'published_at' => 'required|date',
     ];
 
