@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>{{ Config::get('bumble::site-title') }} - The CMS for Laravel</title>
+<title>{{{ Config::get('bumble::site-titel') }}} - The CMS for Laravel</title>
 
 <link rel="stylesheet" href="{{ asset('css/marketing.css') }}"/>
 <link rel="stylesheet" href="{{ asset('packages/prettify/prettify.css') }}"/>
@@ -25,9 +25,9 @@
                     {{--<li class="main-nav__item">--}}
                         {{--<a class="main-nav__link" href="">Blog</a>--}}
                     {{--</li>--}}
-                    {{--<li class="main-nav__item">--}}
-                        {{--<a class="main-nav__link" href="">Donate</a>--}}
-                    {{--</li>--}}
+                    {{--<li class="main-nav__item">
+                        <a class="main-nav__link" href="">Donate</a>
+                    </li>--}}
                     {{--<li class="main-nav__item">--}}
                         {{--<a class="main-nav__link" href="">Contact</a>--}}
                     {{--</li>--}}
