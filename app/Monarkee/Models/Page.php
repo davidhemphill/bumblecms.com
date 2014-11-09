@@ -8,7 +8,6 @@ use Monarkee\Bumble\Fields\TextareaField;
 use Monarkee\Bumble\Fields\TextField;
 use Monarkee\Bumble\Fieldset\Fieldset;
 use Monarkee\Bumble\Models\BumbleModel;
-use Monarkee\BumbleMarkdownField\MarkdownField;
 
 class Page extends BumbleModel
 {

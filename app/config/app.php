@@ -118,7 +118,6 @@ return array(
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Aws\Laravel\AwsServiceProvider',
         'Monarkee\Providers\BlogServiceProvider',
-        'Monarkee\BumbleMarkdownField\BumbleMarkdownFieldServiceProvider',
 	),
 
 	/*
