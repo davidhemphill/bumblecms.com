@@ -283,6 +283,9 @@ img {
   padding-top: 6rem;
   padding-bottom: 6rem; }
 
+.pvb {
+  padding-bottom: 6rem; }
+
 .pt {
   padding-top: 6rem; }
 
@@ -291,6 +294,9 @@ img {
 
 .mv {
   margin-top: 6rem;
+  margin-bottom: 6rem; }
+
+.mvb {
   margin-bottom: 6rem; }
 
 .wrap {
@@ -468,12 +474,21 @@ img {
   font-weight: 600;
   letter-spacing: 4px; }
 
+.bg1 {
+  background-color: #22809d; }
+
+.bg2 {
+  background-color: #195e73; }
+
 .basic {
   font-size: 1.6rem;
   line-height: 1.5; }
 
 .white {
   color: #fff; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 .main-header {
   background-color: #2795b6; }
@@ -550,6 +565,37 @@ img {
 
 .hero {
   background-color: #22809d; }
+
+.hero__btn {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.9rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem; }
+
+.hero__install {
+  font-size: 1.6rem;
+  color: #fff; }
+  .hero__install > code {
+    border-radius: 3px;
+    margin-left: 1rem;
+    color: rgba(255, 255, 255, 0.7); }
 
 .banner__title {
   color: #fff;
