@@ -293,6 +293,10 @@ $white: #fff;
   padding-bottom: $sv;
 }
 
+.pvb {
+  padding-bottom: $sv;
+}
+
 .pt {
   padding-top: $sv;
 }
@@ -303,6 +307,10 @@ $white: #fff;
 
 .mv {
   margin-top: $sv;
+  margin-bottom: $sv;
+}
+
+.mvb {
   margin-bottom: $sv;
 }
 
@@ -551,6 +559,15 @@ $ft-10: 7.2rem;
   letter-spacing: 4px;
 }
 
+// Background Colors
+//-------------------------------------------------------------------------- */
+.bg1 {
+  background-color: $bc1;
+}
+.bg2 {
+  background-color: darken($bc1, 10%);
+}
+
 // Basic Text
 // ------------------------------------------------------------------------------------ */
 .basic {
@@ -564,6 +581,11 @@ $ft-10: 7.2rem;
   color: $white;
 }
 
+// Text Transform
+//-------------------------------------------------------------------------- */
+.uppercase {
+  text-transform: uppercase;
+}
 
 // Main Header
 // ------------------------------------------------------------------------------------ */
@@ -635,6 +657,32 @@ $ft-10: 7.2rem;
 // ------------------------------------------------------------------------------------ */
 .hero {
   background-color: $bc1;
+}
+
+.hero__btn {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 5.9rem;
+  font-size: 1.4rem;
+  font-weight: $bold;
+  letter-spacing: 0.5rem;
+}
+
+.hero__install {
+  font-size: 1.6rem;
+  color: $white;
+
+  & > code {
+    // background-color: $bc2;
+    // padding: 1rem 1.5rem;
+    border-radius: 3px;
+    margin-left: 1rem;
+    color: rgba($white, 0.7);
+  }
 }
 
 .banner {

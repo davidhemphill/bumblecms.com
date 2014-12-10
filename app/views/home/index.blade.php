@@ -10,6 +10,12 @@
                     @endforeach
                 </div>
 
+                <div class="tac">
+                    <a href="http://github.com/monarkee/bumble" class="hero__btn bg2 dib tcw uppercase ls2 fwbold">Download Bumble Beta</a>
+                </div>
+
+                <p class="hero__install tac mvb"><code>"monarkee/bumble": "dev-master"</code></p>
+
                 <img src="{{ asset('img/bumble5.png') }}" alt="Screenshot of Bumble"/>
             </div>
         </section>
