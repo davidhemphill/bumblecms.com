@@ -5512,6 +5512,19 @@ hr {
     margin-right: 10rem; } }
 
 @media only screen and (min-width: 300px) {
+  .pa {
+    padding: 3rem; } }
+@media only screen and (min-width: 600px) {
+  .pa {
+    padding: 6rem; } }
+@media only screen and (min-width: 900px) {
+  .pa {
+    padding: 6rem; } }
+@media only screen and (min-width: 1440px) {
+  .pa {
+    padding: 6rem; } }
+
+@media only screen and (min-width: 300px) {
   .pv {
     padding-top: 3rem;
     padding-bottom: 3rem; } }
@@ -5527,6 +5540,19 @@ hr {
   .pv {
     padding-top: 6rem;
     padding-bottom: 6rem; } }
+
+@media only screen and (min-width: 300px) {
+  .ma {
+    margin: 3rem; } }
+@media only screen and (min-width: 600px) {
+  .ma {
+    margin: 6rem; } }
+@media only screen and (min-width: 900px) {
+  .ma {
+    margin: 6rem; } }
+@media only screen and (min-width: 1440px) {
+  .ma {
+    margin: 6rem; } }
 
 @media only screen and (min-width: 300px) {
   .mv {
