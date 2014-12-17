@@ -4,8 +4,8 @@
     <main class="main-area">
         @include ('docs.partials.sidebar')
 
-        <section class="main-content">
             @markdown($page->content)
+        <section class="main-content pa">
         </section>
     </main>
 @stop
