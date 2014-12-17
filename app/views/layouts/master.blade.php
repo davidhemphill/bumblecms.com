@@ -39,7 +39,9 @@
     @yield('content')
 
     <footer class="main-footer pv6">
-        <p class="copyright">&copy; {{ date('Y') }} Monarkee. All rights reserved. Built with Bumble.</p>
+        <div class="wrap">
+            <p class="copyright">&copy; {{ date('Y') }} Monarkee. All rights reserved. <br class="xmd xlg">Built with Bumble.</p>
+        </div>
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

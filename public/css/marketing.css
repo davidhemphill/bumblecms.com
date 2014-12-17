@@ -6083,6 +6083,9 @@ button, input, select, textarea {
   @media only screen and (min-width: 900px) {
     .xmd {
       display: initial; } }
+  @media only screen and (min-width: 1440px) {
+    .xmd {
+      display: initial; } }
 
 .xlg {
   display: initial; }
