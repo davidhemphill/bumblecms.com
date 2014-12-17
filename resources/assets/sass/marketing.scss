@@ -6,246 +6,33 @@
     Notes:
 */
 
-@import '../../../node_modules/amaretto/stylesheets/amaretto';
+@import 'reset';
 
 // Custom Font Stacks
 $avenir: 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-// Global Widths
-$main_site_width: 120rem;
-
-// Padding & Margins
-$sv: 6rem;
-$sh: 6rem;
-
-// Custom Settings & Colors
-$branding_color: #2795b6;
-$branding_gray: rgba(60, 60, 60, 1);
-
-$bc1: darken($branding_color, 6%);
-$bc2: darken($branding_color, 17%);
-$bc3: darken($branding_color, 28%);
-$bc4: darken($branding_color, 39%);
-
-$cg1: darken(#fff, 6%);
-$cg2: darken(#fff, 17%);
-$cg3: darken(#fff, 28%);
-$cg4: darken(#fff, 39%);
-$cg5: darken(#fff, 50%);
-$cg6: darken(#fff, 61%);
-$cg7: darken(#fff, 72%);
-$cg8: darken(#fff, 83%);
-$cg9: darken(#fff, 94%);
-
-// Media Query Helper
-@mixin media($point) {
-  @media #{$point} { @content; }
-}
-
-// Responsive Breakpoints
-//-------------------------------------------------------------------------- */
-$sm: 'only screen and (min-width: 300px)';
-$md: 'only screen and (min-width: 600px)';
-$lg: 'only screen and (min-width: 900px)';
-$xlg: 'only screen and (min-width: 1440px)';
-
-$only-sm: 'only screen and (max-width: 599px)';
-$only-md: 'only screen and (min-width: 600px) and (max-width: 899px)';
-$only-lg: 'only screen and (min-width: 900px) and (max-width: 1439px)';
-$only-xlg: 'only screen and (min-width: 1440px)';
-
-
-
-// Flexbox Layout Grid
-//-------------------------------------------------------------------------- */
-.g-row {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @include media($md)
-  {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: stretch;
-    //    justify-content: space-between;
-  }
-}
-
-// Add this to give your columns default gutter spacing
-.g-row--sm {
-  [class*="g-col-"] {
-    @include media($md)
-    {
-      margin-right: $sh/2;
-    }
-
-    @include media($lg)
-    {
-      margin-right: $sh/2;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-}
-
-.g-row--lg {
-  [class*="g-col-"] {
-    @include media($md)
-    {
-      margin-right: $sh/2;
-    }
-
-    @include media($lg)
-    {
-      margin-right: $sh;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-}
-
-.g-row--wrap {
-  flex-wrap: wrap;
-}
-
-@for $i from 1 through 12 {
-  .g-col-#{$i} {
-    flex: $i;
-  }
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.flex-end {
-  align-self: flex-end;
-}
-
-// Reordering Columns
-// ------------------------------------------------------------------------------------ */
-.g-col--last { order: 1; }
-
-.g-col-sm--first {
-  order: 0 !important;
-}
-
-.g-col-md--first {
-  @include media($md)
-  {
-    order: 0 !important;
-  }
-}
-
-.g-col-lg--first {
-  @include media($lg)
-  {
-    order: 0 !important;
-  }
-}
-
-.g-col-sm--last {
-  order: 1 !important;
-}
-
-.g-col-md--last {
-  @include media($md)
-  {
-    order: 1 !important;
-  }
-}
-
-.g-col-lg--last {
-  @include media($lg)
-  {
-    order: 1 !important;
-  }
-}
-
-// Responsive Grid Helpers
-// ------------------------------------------------------------------------------------ */
-.g-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.g-item {
-  display: flex;
-}
-
-.g2 {
-  flex: 1 0 50%;
-}
-
-@include media($sm)
-{
-  .g2-sm {
-    flex: 1 0 50%;
-  }
-
-  .g3-sm {
-    width: 25%;
-  }
-}
-
-@include media($md)
-{
-  .g3-md {
-    flex: 1 0 33.333333%;
-  }
-
-  .g4-md {
-    flex: 1 0 25%;
-  }
-}
-
-
-@include media($lg)
-{
-  .g5-lg {
-    flex: 1 0 20%;
-  }
-}
-
-// Float-based Grid Helpers
-// ------------------------------------------------------------------------------------ */
-.f-grid {
-  @include clearfix;
-}
-
-.f-item {
-}
-
-@include media($sm)
-{
-  .f2-sm {
-    width: 50%;
-  }
-}
-
-@include media($md)
-{
-  .f3-md {
-    width: 33.33333333%;
-  }
-}
-
-@include media($lg)
-{
-  .f4-lg {
-    width: 25%;
-  }
-}
 
 // Colors
 $success_color: #4AB471;
 $warning_color: #F3AE4E;
 $danger_color: #CF5C60;
+
+// Beard Configuration
+//-------------------------------------------------------------------------- */
+$site-width-lg: 132rem !default;
+$brand-color-1: #2795b6;
+
+// Imports
+//-------------------------------------------------------------------------- */
+@import '../bower_components/beard/beard';
+
+// Site-specific Colors
+//-------------------------------------------------------------------------- */
+$brand-gray: rgba(60, 60, 60, 1);
+
+$bc1: darken($brand-color-1, 6%);
+$bc2: darken($brand-color-1, 17%);
+$bc3: darken($brand-color-1, 28%);
+$bc4: darken($brand-color-1, 39%);
 
 // Basic Styles
 // ------------------------------------------------------------------------------------ */
@@ -261,12 +48,11 @@ html {
 body {
   font-family: $avenir;
   min-height: 100%;
-  background-color: $bc1;
-  color: $branding_gray;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  backround: none !important;
+  background-color: $bc3;
+  // color: $brand-gray;
+  // display: flex;
+  // flex-direction: column;
 }
 
 a {
@@ -278,274 +64,9 @@ img {
   height: auto;
 }
 
-// Color Helpers
-// ------------------------------------------------------------------------------------ */
-$white: #fff;
-
-.tcw {
-  color: $white;
-}
-
-// Spacing Helpers
-// ------------------------------------------------------------------------------------ */
-.pv {
-  padding-top: $sv;
-  padding-bottom: $sv;
-}
-
-.pvb {
-  padding-bottom: $sv;
-}
-
-.pt {
-  padding-top: $sv;
-}
-
-.pb {
-  padding-bottom: $sv;
-}
-
-.mv {
-  margin-top: $sv;
-  margin-bottom: $sv;
-}
-
-.mvb {
-  margin-bottom: $sv;
-}
-
-// Wraps
-// ------------------------------------------------------------------------------------ */
-.wrap {
-  max-width: $main_site_width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// Font Sizes
-// ------------------------------------------------------------------------------------ */
-$ft-1: 1.2rem;
-$ft-2: 1.4rem;
-$ft-3: 1.6rem;
-$ft-4: 1.8rem;
-$ft-5: 2.1rem;
-$ft-6: 2.4rem;
-$ft-7: 3.6rem;
-$ft-8: 4.8rem;
-$ft-9: 6.0rem;
-$ft-10: 7.2rem;
-
-.ft-1 { font-size: $ft-1; }
-.ft-2 { font-size: $ft-2; }
-.ft-3 { font-size: $ft-3; }
-.ft-4 { font-size: $ft-4; }
-.ft-5 { font-size: $ft-5; }
-.ft-6 { font-size: $ft-6; }
-.ft-7 { font-size: $ft-7; }
-.ft-8 { font-size: $ft-8; }
-.ft-9 { font-size: $ft-9; }
-.ft-10 { font-size: $ft-10; }
-
-// Responsive Font Sizes
-// ------------------------------------------------------------------------------------ */
-.sm-ft-1 {
-  @include media($only-sm)
-  {
-    font-size: $ft-1 !important;
-  }
-}
-
-.sm-ft-2 {
-  @include media($only-sm)
-  {
-    font-size: $ft-2 !important;
-  }
-}
-
-.sm-ft-3 {
-  @include media($only-sm)
-  {
-    font-size: $ft-3 !important;
-  }
-}
-
-.sm-ft-4 {
-  @include media($only-sm)
-  {
-    font-size: $ft-4 !important;
-  }
-}
-
-.sm-ft-5 {
-  @include media($only-sm)
-  {
-    font-size: $ft-5 !important;
-  }
-}
-
-.sm-ft-6 {
-  @include media($only-sm)
-  {
-    font-size: $ft-6 !important;
-  }
-}
-
-.sm-ft-7 {
-  @include media($only-sm)
-  {
-    font-size: $ft-7 !important;
-  }
-}
-
-.sm-ft-8 {
-  @include media($only-sm)
-  {
-    font-size: $ft-8 !important;
-  }
-}
-
-.sm-ft-9 {
-  @include media($only-sm)
-  {
-    font-size: $ft-9 !important;
-  }
-}
-
-.md-ft-1 {
-  @include media($md)
-  {
-    font-size: $ft-1 !important;
-  }
-}
-
-.md-ft-2 {
-  @include media($md)
-  {
-    font-size: $ft-2 !important;
-  }
-}
-
-.md-ft-3 {
-  @include media($md)
-  {
-    font-size: $ft-3 !important;
-  }
-}
-
-.md-ft-4 {
-  @include media($md)
-  {
-    font-size: $ft-4 !important;
-  }
-}
-
-.md-ft-5 {
-  @include media($md)
-  {
-    font-size: $ft-5 !important;
-  }
-}
-
-.md-ft-6 {
-  @include media($md)
-  {
-    font-size: $ft-6 !important;
-  }
-}
-
-.md-ft-7 {
-  @include media($md)
-  {
-    font-size: $ft-7 !important;
-  }
-}
-
-.md-ft-8 {
-  @include media($md)
-  {
-    font-size: $ft-8 !important;
-  }
-}
-
-.md-ft-9 {
-  @include media($md)
-  {
-    font-size: $ft-9 !important;
-  }
-}
-
-.lg-ft-1 {
-  @include media($lg)
-  {
-    font-size: $ft-1 !important;
-  }
-}
-
-.lg-ft-2 {
-  @include media($lg)
-  {
-    font-size: $ft-2 !important;
-  }
-}
-
-.lg-ft-3 {
-  @include media($lg)
-  {
-    font-size: $ft-3 !important;
-  }
-}
-
-.lg-ft-4 {
-  @include media($lg)
-  {
-    font-size: $ft-4 !important;
-  }
-}
-
-.lg-ft-5 {
-  @include media($lg)
-  {
-    font-size: $ft-5 !important;
-  }
-}
-
-.lg-ft-6 {
-  @include media($lg)
-  {
-    font-size: $ft-6 !important;
-  }
-}
-
-.lg-ft-7 {
-  @include media($lg)
-  {
-    font-size: $ft-7 !important;
-  }
-}
-
-.lg-ft-8 {
-  @include media($lg)
-  {
-    font-size: $ft-8 !important;
-  }
-}
-
-.lg-ft-9 {
-  @include media($lg)
-  {
-    font-size: $ft-9 !important;
-  }
-}
-
-// Text Alignment
-// ------------------------------------------------------------------------------------ */
-.tal { text-align: left; }
-.tac { text-align: center; }
-.tar { text-align: right; }
-
 // Headers
 // ------------------------------------------------------------------------------------ */
-%header { font-weight: 300; margin-top: 0; margin-bottom: 0; }
+%header { font-weight: 300; }
 .h1 { @extend %header; font-size: 6.4rem; }
 .h2 { @extend %header; font-size: 4.8rem; }
 .h3 { @extend %header; font-size: 3.6rem; }
@@ -559,15 +80,6 @@ $ft-10: 7.2rem;
   letter-spacing: 4px;
 }
 
-// Background Colors
-//-------------------------------------------------------------------------- */
-.bg1 {
-  background-color: $bc1;
-}
-.bg2 {
-  background-color: darken($bc1, 10%);
-}
-
 // Basic Text
 // ------------------------------------------------------------------------------------ */
 .basic {
@@ -575,29 +87,18 @@ $ft-10: 7.2rem;
   line-height: 1.5;
 }
 
-// Text Colors
-// ------------------------------------------------------------------------------------ */
-.white {
-  color: $white;
-}
-
-// Text Transform
-//-------------------------------------------------------------------------- */
-.uppercase {
-  text-transform: uppercase;
-}
-
 // Main Header
 // ------------------------------------------------------------------------------------ */
 .main-header {
-  background-color: $branding_color;
+  background-color: $brand-color-1;
 }
 
 .main-header__wrap {
   display: flex;
 //  flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   @include media($md)
   {
@@ -639,7 +140,7 @@ $ft-10: 7.2rem;
 }
 
 .main-nav__link {
-  font-size: $ft-1;
+  font-size: $ft1;
   font-weight: 600;
   color: $white;
   padding-left: 3rem;
@@ -660,6 +161,7 @@ $ft-10: 7.2rem;
 }
 
 .hero__btn {
+  background-color: $bc2;
   padding-right: 3rem;
   padding-left: 3rem;
   display: inline-flex;
@@ -690,17 +192,13 @@ $ft-10: 7.2rem;
 
 .banner__title {
   color: $white;
-  font-size: $ft-9;
   font-weight: 300;
-  margin: 0;
   text-align: center;
 }
 
 .banner__subtitle {
   color: $white;
-  font-size: $ft-4;
   font-weight: 400;
-  margin: 0;
   text-align: center;
 //  text-transform: uppercase;
   letter-spacing: 1px;
@@ -716,7 +214,7 @@ $ft-10: 7.2rem;
 .form {
   @include clearfix;
 //  height: 4.5rem;
-  width: 70rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -770,7 +268,7 @@ $ft-10: 7.2rem;
   font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
-  width: 70rem;
+  max-width: 70rem;
   height: 5rem;
 }
 
@@ -790,6 +288,10 @@ $ft-10: 7.2rem;
 
 // Features
 // ------------------------------------------------------------------------------------ */
+.features {
+  background-color: $bc1;
+}
+
 .features__wrap {
 //  @extend .wrap;
 //  display: flex;
@@ -808,7 +310,6 @@ $ft-10: 7.2rem;
 // Main Footer
 // ------------------------------------------------------------------------------------ */
 .main-footer {
-  background-color: $bc3;
   display: flex;
   justify-content: center;
 }
@@ -816,10 +317,11 @@ $ft-10: 7.2rem;
 .copyright {
   font-size: 1.2rem;
   font-weight: $semibold;
+  line-height: 2;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0;
-  padding: $sv;
+  // padding: $spacing-vert;
   color: rgba($white, 0.2);
   text-align: center;
 }
@@ -878,7 +380,7 @@ $ft-10: 7.2rem;
 .main-content {
   background-color: #FFF;
   flex: 0 0 80%;
-  padding: $sv $sh;
+  // padding: $sv $sh;
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
@@ -913,10 +415,10 @@ $ft-10: 7.2rem;
     font-size: 1.6rem;
     list-style: none;
     line-height: 2;
-    color: $branding_color;
+    // color: $brand-color-1;
 
     a {
-      color: $branding_color;
+      // color: $brand-color-1;
     }
   }
 }

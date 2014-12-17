@@ -11,7 +11,7 @@
     <header class="main-header">
         <div class="wrap main-header__wrap">
             <h1 class="logo">
-                <a href="{{ route('home.index') }}" class="logo__link">{{{ Config::get('bumble::site-title') }}}</a>
+                <a href="{{ route('home.index') }}" class="logo__link fwbold">{{{ Config::get('bumble::site-title') }}}</a>
             </h1>
 
             <nav class="main-nav">
@@ -38,7 +38,7 @@
 
     @yield('content')
 
-    <footer class="main-footer">
+    <footer class="main-footer pv6">
         <p class="copyright">&copy; {{ date('Y') }} Monarkee. All rights reserved. Built with Bumble.</p>
     </footer>
 
