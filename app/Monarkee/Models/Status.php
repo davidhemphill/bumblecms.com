@@ -8,7 +8,7 @@ class Status extends BumbleModel
 {
     public $timestamps = false;
 
-    protected $description = 'Statuses are helpful for creating a content workflow';
+    public $description = 'Statuses are helpful for creating a content workflow';
 
     public $rules = [
         'title' => 'required',

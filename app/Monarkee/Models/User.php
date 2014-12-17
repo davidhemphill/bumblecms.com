@@ -20,6 +20,8 @@ class User extends BumbleModel implements UserInterface, RemindableInterface
 
     public $showInTopNav = true;
 
+    public $editingTitle = 'username';
+
     /**
      * @var array
      */

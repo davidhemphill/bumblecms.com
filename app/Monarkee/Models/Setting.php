@@ -7,9 +7,9 @@ use Monarkee\Bumble\Models\BumbleModel;
 
 class Setting extends BumbleModel
 {
-    protected $showInTopNav = true;
+    public $showInTopNav = true;
 
-    protected $description = 'Place your site settings here and use them throughout your app';
+    public $description = 'Place your site settings here and use them throughout your app';
 
     public $rules = [
         'key' => 'required|unique:settings',

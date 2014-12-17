@@ -14,7 +14,7 @@ class Tag extends BumbleModel
 {
     use SoftDeletingTrait;
 
-    protected $description = 'Tags are ways to organize things';
+    public $description = 'Tags are ways to organize things';
 
     public $rules = [
         'slug' => 'required|unique:tags',

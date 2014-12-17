@@ -16,6 +16,6 @@ class DocsSidebarComposer
 
     public function compose($view)
     {
-        $view->with('pages', $this->page->all());
+        $view->with('pageLinks', $this->page->active()->docs()->orderBy('sort', 'asc')->get());
     }
 }

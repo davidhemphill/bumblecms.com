@@ -6,6 +6,7 @@ use Monarkee\Bumble\Fields\DateField;
 use Monarkee\Bumble\Fields\DateTimeField;
 use Monarkee\Bumble\Fields\Field;
 use Monarkee\Bumble\Fields\FileField;
+use Monarkee\Bumble\Fields\BelongsToField;
 use Monarkee\Bumble\Fields\HasOneField;
 use Monarkee\Bumble\Fields\ImageField;
 use Monarkee\Bumble\Fields\BooleanField;
@@ -23,13 +24,11 @@ class Entry extends BumbleModel
 
     public $showInTopNav = true;
 
-    public $editingTitle = 'title';
-
     public $dates = [
         'published_at',
     ];
 
-    protected $description = 'A beautiful place to put your entries';
+    public $description = 'A beautiful place to put your entries';
 
     public $rules = [
         'title' => 'required',
@@ -47,8 +46,6 @@ class Entry extends BumbleModel
                 new SlugField('slug', [
                     'set_from' => 'title'
                 ]),
-            ],
-            'meta' => [
                 new TextareaField('excerpt', [
                     'show_in_listing' => false,
                 ]),
@@ -59,18 +56,11 @@ class Entry extends BumbleModel
                     'show_in_listing' => false,
                     'upload_to'   => 'banner_images',
                 ]),
-                new HasOneField('status'),
-                new DateTimeField('published_at', [
-                    'format' => 'D F d, Y'
-                ]),
+                new BelongsToField('status'),
+                new DateTimeField('published_at', ['format' => 'D F d, Y']),
                 new HasOneField('category'),
                 new BooleanField('active'),
             ],
-//            'tags' => [
-//                new BelongsToManyField('tags', [
-//                    'widget' => 'TagField',
-//                ]),
-//            ]
         ]);
     }
 

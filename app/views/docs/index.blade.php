@@ -5,7 +5,7 @@
         @include ('docs.partials.sidebar')
 
         <section class="main-content">
-            @markdown($page->content)
+            @markdown($page)
         </section>
     </main>
 @stop

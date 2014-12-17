@@ -1227,12 +1227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "e540752e9a4b0c61e158be54be0e38be1b2e0aad"
+                "reference": "c6e88ca6e81bc5a2d7161658e16a95b7ef8d6ad1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/e540752e9a4b0c61e158be54be0e38be1b2e0aad",
-                "reference": "e540752e9a4b0c61e158be54be0e38be1b2e0aad",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/c6e88ca6e81bc5a2d7161658e16a95b7ef8d6ad1",
+                "reference": "c6e88ca6e81bc5a2d7161658e16a95b7ef8d6ad1",
                 "shasum": ""
             },
             "require": {
@@ -1317,7 +1317,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2014-11-07 12:08:53"
+            "time": "2014-11-10 03:08:59"
         },
         {
             "name": "phpspec/prophecy",
@@ -2910,12 +2910,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "d50d2b02bc5d23dad174543e9ec06422816bc347"
+                "reference": "f3f5f31d5e227c51eed7ba8b1ed809a97ebaa341"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/d50d2b02bc5d23dad174543e9ec06422816bc347",
-                "reference": "d50d2b02bc5d23dad174543e9ec06422816bc347",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/f3f5f31d5e227c51eed7ba8b1ed809a97ebaa341",
+                "reference": "f3f5f31d5e227c51eed7ba8b1ed809a97ebaa341",
                 "shasum": ""
             },
             "require": {
@@ -2968,7 +2968,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2014-11-03 14:26:52"
+            "time": "2014-11-03 20:24:10"
         },
         {
             "name": "symfony/security-core",

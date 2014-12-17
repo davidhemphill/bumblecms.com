@@ -10,7 +10,7 @@ class Product extends BumbleModel
 {
     public $timestamps = false;
 
-    protected $description = 'A beautiful place to put your entries';
+    public $description = 'A beautiful place to put your entries';
 
     public $rules = [
         'title' => 'required',

@@ -12,7 +12,7 @@ class Comment extends BumbleModel
     public function setFields()
     {
         return new Fieldset([
-            new TextareaField('title', ['widget' => 'WYSIWYGField']),
+            new TextareaField('content'),
         ]);
     }
 
