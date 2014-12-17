@@ -688,24 +688,6 @@ hr {
           -ms-flex-align: stretch;
               align-items: stretch; } }
 
-@media only screen and (min-width: 600px) {
-  .g-row--sm [class*="g-col-"] {
-    margin-right: 2rem; } }
-@media only screen and (min-width: 900px) {
-  .g-row--sm [class*="g-col-"] {
-    margin-right: 3rem; } }
-.g-row--sm [class*="g-col-"]:last-of-type {
-  margin-right: 0; }
-
-@media only screen and (min-width: 600px) {
-  .g-row--lg [class*="g-col-"] {
-    margin-right: 4rem; } }
-@media only screen and (min-width: 900px) {
-  .g-row--lg [class*="g-col-"] {
-    margin-right: 6rem; } }
-.g-row--lg [class*="g-col-"]:last-of-type {
-  margin-right: 0; }
-
 .g-row--wrap {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -5539,12 +5521,12 @@ hr {
     padding-bottom: 6rem; } }
 @media only screen and (min-width: 900px) {
   .pv {
-    padding-top: 9rem;
-    padding-bottom: 9rem; } }
+    padding-top: 6rem;
+    padding-bottom: 6rem; } }
 @media only screen and (min-width: 1440px) {
   .pv {
-    padding-top: 12rem;
-    padding-bottom: 12rem; } }
+    padding-top: 6rem;
+    padding-bottom: 6rem; } }
 
 @media only screen and (min-width: 300px) {
   .mv {
@@ -5556,12 +5538,12 @@ hr {
     margin-bottom: 6rem; } }
 @media only screen and (min-width: 900px) {
   .mv {
-    margin-top: 9rem;
-    margin-bottom: 9rem; } }
+    margin-top: 6rem;
+    margin-bottom: 6rem; } }
 @media only screen and (min-width: 1440px) {
   .mv {
-    margin-top: 12rem;
-    margin-bottom: 12rem; } }
+    margin-top: 6rem;
+    margin-bottom: 6rem; } }
 
 .inline-nav {
   margin: 0;

@@ -22,19 +22,19 @@
 
         <section class="features pv">
             <div class="g-row g-row--lg features__wrap wrap">
-                <section class="g-col-1 feature only-sm-mb3">
+                <section class="g-col-1 feature mr5 only-sm-mb3">
                     <h3 class="h4 tcw mb2">{{{ $homepage->feature_1_title }}}</h3>
                     <div class="basic tcw">
                         @markdown($homepage->feature_1_content)
                     </div>
                 </section>
-                <section class="g-col-1 feature only-sm-mb3">
+                <section class="g-col-1 feature mr5 only-sm-mb3">
                     <h3 class="h4 tcw mb2">{{{ $homepage->feature_2_title }}}</h3>
                     <div class="basic tcw">
                         @markdown($homepage->feature_2_content)
                     </div>
                 </section>
-                <section class="g-col-1 feature only-sm-mb3">
+                <section class="g-col-1 feature mr5 only-sm-mb3">
                     <h3 class="h4 tcw mb2">{{{ $homepage->feature_3_title }}}</h3>
                     <div class="basic tcw">
                         @markdown($homepage->feature_3_content)
