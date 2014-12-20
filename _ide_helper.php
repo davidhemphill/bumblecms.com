@@ -1,7 +1,7 @@
 <?php
 /**
  * An helper file for Laravel 4, to provide autocomplete information to your IDE
- * Generated for Laravel 4.2.11 on 2014-11-10.
+ * Generated for Laravel 4.2.11 on 2014-12-18.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -1507,7 +1507,7 @@ namespace {
         /**
          * Get the currently authenticated user.
          *
-         * @return \User|null 
+         * @return \Monarkee\Models\User|null 
          * @static 
          */
         public static function user(){
@@ -1611,7 +1611,7 @@ namespace {
          *
          * @param mixed $id
          * @param bool $remember
-         * @return \User 
+         * @return \Monarkee\Models\User 
          * @static 
          */
         public static function loginUsingId($id, $remember = false){
@@ -1716,7 +1716,7 @@ namespace {
         /**
          * Return the currently cached user of the application.
          *
-         * @return \User|null 
+         * @return \Monarkee\Models\User|null 
          * @static 
          */
         public static function getUser(){
@@ -1758,7 +1758,7 @@ namespace {
         /**
          * Get the last user we attempted to authenticate.
          *
-         * @return \User 
+         * @return \Monarkee\Models\User 
          * @static 
          */
         public static function getLastAttempted(){
@@ -4423,6 +4423,17 @@ namespace {
          */
         public static function copy($path, $target){
             return \Illuminate\Filesystem\Filesystem::copy($path, $target);
+        }
+        
+        /**
+         * Extract the file name from a file path.
+         *
+         * @param string $path
+         * @return string 
+         * @static 
+         */
+        public static function name($path){
+            return \Illuminate\Filesystem\Filesystem::name($path);
         }
         
         /**
