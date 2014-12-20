@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "860f4d5d79279b51a722d5fc85d5809a",
+    "hash": "8eef4a99d5a135c17e3f27ba00c80b80",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2672fbfe5e169d1ee0189295e78e4b46334eb672"
+                "reference": "087912b2318814e48fee54610a441672491f3200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2672fbfe5e169d1ee0189295e78e4b46334eb672",
-                "reference": "2672fbfe5e169d1ee0189295e78e4b46334eb672",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/087912b2318814e48fee54610a441672491f3200",
+                "reference": "087912b2318814e48fee54610a441672491f3200",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2014-12-18 00:26:26"
+            "time": "2014-12-18 21:40:25"
         },
         {
             "name": "aws/aws-sdk-php-laravel",
@@ -125,69 +125,6 @@
                 "sdk"
             ],
             "time": "2014-05-12 23:31:32"
-        },
-        {
-            "name": "barryvdh/laravel-ide-helper",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "39ffaa62f470236a3500542824a5c3f7b704905b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/39ffaa62f470236a3500542824a5c3f7b704905b",
-                "reference": "39ffaa62f470236a3500542824a5c3f7b704905b",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "4.x|5.0.x",
-                "illuminate/filesystem": "4.x|5.0.x",
-                "illuminate/support": "4.x|5.0.x",
-                "php": ">=5.3.0",
-                "phpdocumentor/reflection-docblock": "2.0.x",
-                "symfony/class-loader": "~2.3"
-            },
-            "require-dev": {
-                "doctrine/dbal": "~2.3"
-            },
-            "suggest": {
-                "doctrine/dbal": "Load information from the database about models for phpdocs (~2.3)"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.11-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\LaravelIdeHelper\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "Laravel IDE Helper, generates correct PHPDocs for all Facade classes, to improve auto-completion.",
-            "keywords": [
-                "autocomplete",
-                "codeintel",
-                "helper",
-                "ide",
-                "laravel",
-                "netbeans",
-                "phpdoc",
-                "phpstorm",
-                "sublime"
-            ],
-            "time": "2014-12-17 15:30:50"
         },
         {
             "name": "ckeditor/ckeditor",
@@ -482,12 +419,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "eaadef477c9f7fdece3120cd68c38143c0cd4db4"
+                "reference": "5e9f5528619bde654375c012ac172fb199f43dda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/eaadef477c9f7fdece3120cd68c38143c0cd4db4",
-                "reference": "eaadef477c9f7fdece3120cd68c38143c0cd4db4",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/5e9f5528619bde654375c012ac172fb199f43dda",
+                "reference": "5e9f5528619bde654375c012ac172fb199f43dda",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +503,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-12-11 05:46:03"
+            "time": "2014-12-18 23:26:35"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -664,12 +601,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0dd537e53a1c49818edf111657632cc3b33f0088"
+                "reference": "884aa69a926bc84bd61613a45a7ad4ab665e528a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0dd537e53a1c49818edf111657632cc3b33f0088",
-                "reference": "0dd537e53a1c49818edf111657632cc3b33f0088",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/884aa69a926bc84bd61613a45a7ad4ab665e528a",
+                "reference": "884aa69a926bc84bd61613a45a7ad4ab665e528a",
                 "shasum": ""
             },
             "require": {
@@ -771,20 +708,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-18 14:06:22"
+            "time": "2014-12-19 22:33:50"
         },
         {
             "name": "league/flysystem",
-            "version": "dev-master",
+            "version": "0.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "1b6c3f41b29671ca2dff32c179156ea2d26cc249"
+                "reference": "e046fe60d761e30691c642c9cc6a4089f724e805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/1b6c3f41b29671ca2dff32c179156ea2d26cc249",
-                "reference": "1b6c3f41b29671ca2dff32c179156ea2d26cc249",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e046fe60d761e30691c642c9cc6a4089f724e805",
+                "reference": "e046fe60d761e30691c642c9cc6a4089f724e805",
                 "shasum": ""
             },
             "require": {
@@ -795,14 +732,16 @@
                 "barracuda/copy": "~1.1.4",
                 "dropbox/dropbox-sdk": "~1.1.1",
                 "ext-fileinfo": "*",
+                "guzzlehttp/guzzle": "~4.0",
                 "league/event": "~1.0",
                 "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9",
                 "phpseclib/phpseclib": "~0.3.5",
-                "phpspec/phpspec": "~2.0.0",
+                "phpspec/phpspec": "~2.0",
                 "phpunit/phpunit": "~4.0",
                 "predis/predis": "~1.0",
-                "rackspace/php-opencloud": "~1.11",
+                "rackspace/php-opencloud": "~1.10.0",
+                "sabre/dav": "~2.0.2",
                 "tedivm/stash": "~0.12.0"
             },
             "suggest": {
@@ -812,8 +751,6 @@
                 "ext-fileinfo": "Required for MimeType",
                 "guzzlehttp/guzzle": "Allows you to use http files (reading only)",
                 "league/event": "Required for EventableFilesystem",
-                "league/flysystem-azure": "Allows you to use Windows Azure Blob storage",
-                "league/flysystem-webdav": "Allows you to use WebDAV storage",
                 "phpseclib/phpseclib": "Allows SFTP server storage",
                 "predis/predis": "Allows you to use Predis for caching",
                 "rackspace/php-opencloud": "Allows you to use Rackspace Cloud Files",
@@ -823,7 +760,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "0.5-dev"
                 }
             },
             "autoload": {
@@ -859,7 +796,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2014-12-16 18:08:21"
+            "time": "2014-11-05 13:39:29"
         },
         {
             "name": "michelf/php-markdown",
@@ -1629,12 +1566,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "827d10a1638bd573dbd5fb1bed9ddc397855c850"
+                "reference": "a26a348a8686a8f523c53ed2683d65b3d36956bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/827d10a1638bd573dbd5fb1bed9ddc397855c850",
-                "reference": "827d10a1638bd573dbd5fb1bed9ddc397855c850",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a26a348a8686a8f523c53ed2683d65b3d36956bd",
+                "reference": "a26a348a8686a8f523c53ed2683d65b3d36956bd",
                 "shasum": ""
             },
             "require": {
@@ -1693,7 +1630,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-17 06:19:52"
+            "time": "2014-12-19 06:27:31"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2315,56 +2252,6 @@
             "description": "Symfony BrowserKit Component",
             "homepage": "http://symfony.com",
             "time": "2014-12-15 18:38:14"
-        },
-        {
-            "name": "symfony/class-loader",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/ClassLoader",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/ClassLoader.git",
-                "reference": "aa0ab2aeaebbba7f472d6b049ccd05afd110f713"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/aa0ab2aeaebbba7f472d6b049ccd05afd110f713",
-                "reference": "aa0ab2aeaebbba7f472d6b049ccd05afd110f713",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "symfony/finder": "~2.0,>=2.0.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\ClassLoader\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony ClassLoader Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-12-16 20:28:59"
         },
         {
             "name": "symfony/console",

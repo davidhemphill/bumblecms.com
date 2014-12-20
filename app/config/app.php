@@ -115,7 +115,6 @@ return array(
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
         'Monarkee\Bumble\BumbleServiceProvider',
-        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Aws\Laravel\AwsServiceProvider',
         'Monarkee\Providers\BlogServiceProvider',
 	),
