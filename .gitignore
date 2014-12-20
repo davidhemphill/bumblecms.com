@@ -10,3 +10,4 @@ Thumbs.db
 node_modules
 db_backups
 /workbench
+npm-debug.log
