@@ -7,7 +7,7 @@ return [
     | Admin Settings
     |--------------------------------------------------------------------------
     */
-    'site-title' => 'Bumble CMS',
+    'site-title' => 'Bumble',
     'site-url' => 'http://bumblecms.com',
 
     /*
@@ -19,12 +19,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Pagination
+    |--------------------------------------------------------------------------
+    */
+    'paginate' => 10,
+
+    /*
+    |--------------------------------------------------------------------------
     | Amazon S3 Configuration
     |--------------------------------------------------------------------------
     */
-    'S3-key' => getenv('S3-key'),
-    'S3-secret' => getenv('S3-secret'),
-    'bucket_name' => getenv('bucket_name'),
+    'S3-key' => '',
+    'S3-secret' => '',
+    'bucket_name' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -49,5 +56,7 @@ return [
         'login' => 'login',
         'logout' => 'logout',
         'dashboard' => 'dashboard',
-    ],
+        'forgot_password' => 'forgot-password',
+        'reset_password' => 'reset-password',
+    ]
 ];

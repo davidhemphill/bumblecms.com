@@ -1,26 +1,14 @@
 <?php namespace Monarkee\Models;
 
-use Monarkee\Bumble\Fields\SlugField;
-use Monarkee\Bumble\Fields\TextField;
-use Monarkee\Bumble\Fieldset\Fieldset;
 use Monarkee\Bumble\Models\BumbleModel;
+use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class Category extends BumbleModel
 {
-    public $rules = [
-        'title' => 'required',
-    ];
+    use SoftDeletingTrait;
 
-    /**
-     * @return mixed
-     */
-    public function setFields()
+    public function bumble()
     {
-        return new Fieldset([
-            new TextField('title'),
-            new SlugField('slug', [
-                'set_from' => 'title'
-            ]),
-        ]);
+        return $this->hasAdmin('Monarkee\ModelAdmin\CategoryAdmin');
     }
 }
