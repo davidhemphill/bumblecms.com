@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "041fc182a693dd72fb3e8c30f36c1406",
+    "hash": "a4d0e8c6f1488f3ad273b074fc0a0a83",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -863,12 +863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/monarkee/bumble.git",
-                "reference": "cf21fcd89d956ab3324cc03ad8e6c4d7b68e680f"
+                "reference": "aa0f3444c03c6213da936e6a27b2e24d797e099e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monarkee/bumble/zipball/cf21fcd89d956ab3324cc03ad8e6c4d7b68e680f",
-                "reference": "cf21fcd89d956ab3324cc03ad8e6c4d7b68e680f",
+                "url": "https://api.github.com/repos/monarkee/bumble/zipball/aa0f3444c03c6213da936e6a27b2e24d797e099e",
+                "reference": "aa0f3444c03c6213da936e6a27b2e24d797e099e",
                 "shasum": ""
             },
             "require": {
@@ -899,7 +899,7 @@
                     "email": "davidlee.hemphill@gmail.com"
                 }
             ],
-            "time": "2015-01-10 06:50:46"
+            "time": "2015-01-13 04:07:49"
         },
         {
             "name": "monolog/monolog",
@@ -3089,12 +3089,8 @@
             "time": "2014-03-02 18:29:18"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "phpunit/phpunit": 20,
@@ -3102,10 +3098,7 @@
         "monarkee/bumble": 20
     },
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }
