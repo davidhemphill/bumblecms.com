@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>{{{ Config::get('bumble::site-titel') }}} - The CMS for Laravel</title>
+<title>{{{ Config::get('bumble::site-title') }}} - CMS for the PHP Framework Laravel</title>
 
 <link rel="stylesheet" href="{{ asset('css/marketing.css') }}"/>
 <link rel="stylesheet" href="{{ asset('packages/prettify/prettify.css') }}"/>
