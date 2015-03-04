@@ -9,9 +9,13 @@ class PageController extends Controller
 
     public function index()
     {
-        $page = Page::active()->whereSlug('doc-index')->firstOrFail();
+        // Fetch the doc page
+        $filesystem = new Filesystem(new Adapter(Config::get('site.docs_folder')));
 
-        return View::make('docs.index')->with(compact('page'));
+        if ($page = $filesystem->read('index.md'))
+        {
+            return View::make('docs.show')->with(compact('page'));
+        }
     }
 
     public function show($slug)
@@ -23,6 +27,5 @@ class PageController extends Controller
         {
             return View::make('docs.show')->with(compact('page'));
         }
-        // $page = Page::active()->whereSlug($slug)->first();
     }
 }
