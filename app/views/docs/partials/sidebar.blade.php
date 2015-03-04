@@ -4,11 +4,27 @@
             <li class="doc-links__item">
                 <a class="doc-links__link" href="/docs">Introduction</a>
             </li>
-            @foreach($pageLinks as $page)
-                <li class="doc-links__item">
-                    <a class="doc-links__link" href="/docs/{{ $page->slug }}">{{ $page->title }}</a>
-                </li>
-            @endforeach
+            <li class="doc-links__item">
+                <a class="doc-links__link" href="/docs/installation">Installation</a>
+            </li>
+            <li class="doc-links__item">
+                <a class="doc-links__link" href="/docs/configuration">Configuration</a>
+            </li>
+            <li class="doc-links__item">
+                <a class="doc-links__link" href="/docs/authentication">Authentication</a>
+            </li>
+            <li class="doc-links__item">
+                <a class="doc-links__link" href="/docs/models">Models</a>
+            </li>
+            <li class="doc-links__item">
+                <a class="doc-links__link" href="/docs/model-admins">Model Admins</a>
+            </li>
+            <li class="doc-links__item">
+                <a class="doc-links__link" href="/docs/fields">Fields</a>
+            </li>
+            <li class="doc-links__item">
+                <a class="doc-links__link" href="/docs/custom-views">Custom Views</a>
+            </li>
         </ul>
     </nav>
 </aside>

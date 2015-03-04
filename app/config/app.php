@@ -116,7 +116,6 @@ return array(
 
         'Monarkee\Bumble\BumbleServiceProvider',
         'Aws\Laravel\AwsServiceProvider',
-        'Monarkee\Providers\BlogServiceProvider',
 	),
 
 	/*
