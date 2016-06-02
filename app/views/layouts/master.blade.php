@@ -19,9 +19,9 @@
                     {{--<li class="main-nav__item">--}}
                         {{--<a class="main-nav__link" href="">Home</a>--}}
                     {{--</li>--}}
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="{{ url('docs') }}">Beta Documentation</a>
-                    </li>
+                    {{-- <li class="main-nav__item"> --}}
+                        {{-- <a class="main-nav__link" href="{{ url('docs') }}">Beta Documentation</a> --}}
+                    {{-- </li> --}}
                     {{--<li class="main-nav__item">--}}
                         {{--<a class="main-nav__link" href="">Blog</a>--}}
                     {{--</li>--}}
